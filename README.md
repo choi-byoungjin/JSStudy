@@ -9,4 +9,4 @@ typeof fun = "object"
 
 fun 은 주소값을 가지고 있음
 
-javaScript = 인터프리터 언어
+인터프리터 언어
