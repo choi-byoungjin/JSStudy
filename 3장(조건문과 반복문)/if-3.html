@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문-2</title>
+</head>
+<body>
+    <script>
+        //짝수 검사하는 프로그램
+        var value = window.prompt("숫자를 입력해주세요.");
+        alert(typeof(value));
+        //prompt()에서 받은 value값은 String타입이다. 그러므로, 아래코드는 parseInt() 함수를 통해서 String타입을 강제로 정수타입으로 바꾸고 있다.
+        value = parseInt(value);
+        alert(typeof(value));
+
+        //&&는 논리 연산자로써 두 개의 조건이 true이면 true를 리턴한다.
+        //||는 논리 연산자로써 둘 중의 하나의 조건만 true이면 true를 리턴한다.
+        // if((value % 2 == 0) && (value % 3 == 0)) {
+        //     alert("2와 3의 공배수입니다.");
+        // }
+        // else {
+        //     alert("2와 3의 공배수가 아닙니다.");
+        // }
+
+        if((value % 2 == 0) || (value % 3 == 0)) {
+            alert("2나 3의 배수입니다.");
+        }
+        else {
+            alert("2와 3의 배수가 아닙니다.");
+        }
+    </script>
+</body>
+</html>
