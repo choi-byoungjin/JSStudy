@@ -12,3 +12,4 @@ fun 은 주소값을 가지고 있음
 인터프리터 언어
 
 https://www.nextree.co.kr/p9747/
+https://kingofbackend.tistory.com/25
