@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수-8(객체방식으로 함수정의, 익명함수의 확장으로 함수 정의)</title>
+    <script>
+        //var hi = new Function("name", "document.write(name + '님 환영합니다.')");
+        //hi("홍길동");
+        
+        (function(name){
+            document.write(name + "님 환영합니다.");
+        })("홍길동");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
