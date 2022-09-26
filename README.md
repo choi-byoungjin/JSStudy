@@ -14,3 +14,7 @@ fun 은 주소값을 가지고 있음
 
 https://www.nextree.co.kr/p9747/
 https://kingofbackend.tistory.com/25
+
+기초 Part.2
+14강
+콜백함수 vs return = 비동기 vs 동기
