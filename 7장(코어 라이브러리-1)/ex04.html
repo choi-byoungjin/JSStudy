@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지구본 게임</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 500px;
+            position: relative;
+            border: 3px solid red;
+        }
+        .container #gigu {
+            width: 50px;
+            margin-left: 250px;
+            margin-top: 150px;
+        }
+        #text{            
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #score {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var cnt = 0;
+            var $score = $("#score");
+            var play = true;
+
+            $("#gigu").click(function(){
+                if(play){
+                    cnt++;
+                    $score.html(cnt);
+                }
+            });
+            setTimeout(function(){
+                play = false;
+                alert("게임이 종료되었습니다.");
+            }, 5000);
+        });
+    </script>
+</head>
+<body>
+    <div>
+        현재 점수 <span id="score">0</span>
+    </div>
+    <div class="container">
+        <img src="images/gigu.png" id="gigu">
+    </div>
+</body>
+</html>
