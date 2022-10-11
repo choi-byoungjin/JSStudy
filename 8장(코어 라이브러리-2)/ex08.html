@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String클래스-8(왼쪽만 공백제거)</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+        #input {
+            width: 300px;
+        }
+        #output {
+            width: 600px;
+            height: 200px;            
+            border: 2px solid red;
+            text-align: left;
+            vertical-align: top;
+        }
+    </style>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $output = $("#output");
+            var $input = $("#input");
+            $("#confirm").click(function(){
+                var value = $input.val();
+                var result = ltrim(value);
+                //$output.html(value + "<br/>");
+                $output.html(result);
+            });
+        });
+
+        function ltrim(str){
+            if(str.length <= 0) {
+                return "";
+            }
+
+            var firstChar = str.charAt(0);
+            if(firstChar != " ") {
+                return str;
+            }
+
+            var index = 1;
+            for(index=1; index<str.length; index++) {
+                var ch = str.charAt(index);
+                if(ch != " "){
+                    break;
+                }
+            }
+            var result = str.slice(index, str.length);
+            return result;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="input">
+        <button id="confirm">확인</button>
+    </div>
+    <textarea id="output">실행결과</textarea>
+</body>
+</html>
