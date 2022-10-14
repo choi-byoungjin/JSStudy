@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array클래스(length, 배열요소 출력, join())</title>
+    <script>
+        var clients = ["clients1","clients2","clients3","clients4","clients5"];
+        document.write("clients배열의 크기 : " + clients.length + "<br/>");
+
+        for(var i=0; i<clients.length; i++){
+            //var client = clients[i];
+            //document.write("clients[" + i + "] : " + client + "<br/>");
+            document.write("clients[" + i + "] : " + clients[i] + "<br/>");
+        }
+
+        var str = clients.join("?");
+        document.write(str + "<br/>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
