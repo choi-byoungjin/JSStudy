@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array클래스(split()를 이용한 동적메뉴 만들기)</title>
+    <style>
+        #menu {
+            list-style: none;
+            border: 2px solid red;
+            height: 50px;
+            padding: 20px;
+        }
+        #menu li {
+            display: block;
+            float: left;
+            padding: 10px;
+            border: 2px solid blue;
+            margin-left: 15px;
+        }
+    </style>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $menu = $("#menu");
+            var menuData = "메뉴2,메뉴3,메뉴4,메뉴5";
+
+            var menuItems = menuData.split(",");
+
+            for(var i=0; i<menuItems.length; i++){
+                var newItem = "<li>" + menuItems[i] + "</li>";
+                $menu.append(newItem);
+            }
+        });
+    </script>
+</head>
+<body>
+    <ul id="menu">
+        <li>메뉴1</li>
+    </ul>
+</body>
+</html>
