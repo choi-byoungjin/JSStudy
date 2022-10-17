@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array클래스(배열요소 첫번재, 마지막, n번째 추가하기)</title>
+    <script>
+        var menus = ["menu1","menu2","menu3","menu4"]
+        document.write("실행 전 : " + menus.join(",") + "<br/>");
+        menus.shift();
+        document.write("첫 번째 배열요소 삭제 : " + menus.join(",") + "<br/>");
+        menus.pop();
+        document.write("마지막 배열요소 삭제 : " + menus.join(",") + "<br/>");
+        
+        var menus1 = ["menu1","menu2","menu3","menu4"];
+        menus1.splice(2, 1);
+        document.write("n번재 배열요소 삭제 : " + menus1.join(",") + "<br/>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
