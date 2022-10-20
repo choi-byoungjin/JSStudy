@@ -27,4 +27,8 @@ https://ko.javascript.info/
 DOM  
 HTML의 태그에 접근, 트리구조   
 브라우저별 상이함  
-<html> 태그의 상위
+<html> 태그의 상위  
+document는 자바의 object와 같은 개념  
+  
+DOM 트리구조를 확인할 수 있는 사이트  
+https://software.hixie.ch/utilities/js/live-dom-viewer/
