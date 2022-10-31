@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 vs jQuery-4</title>
+    <style>
+        body {
+            font-size: 15px;
+            font-family: "굴림";
+        }
+    </style>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script>
+        // JS
+        // window.onload = function(){
+        //     var btn1 = document.getElementById("btn1");
+
+        //     //IE7버전 이하
+        //     if(btn1.attachEvent){
+        //         btn1.attachEvent("onclick", function(){
+        //             alert("반갑습니다.");
+        //         });
+        //     }
+        //     //IE7 이회
+        //     else {
+        //         btn1.addEventListener("click", function(){
+        //             alert("반갑습니다.");
+        //         });
+        //     }
+        // }
+        //jQuery
+        $(document).ready(function(){
+            $("#btn1").on("click", function(){
+                alert("반갑습니다.");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">버튼</button>
+    <br/>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자바스크립트 vs jQuery-2</title>
+    <title>자바스크립트 vs jQuery-3</title>
     <style>
         body {
             font-size: 15px;
@@ -24,15 +24,21 @@
     <script>
         // JS
         // window.onload = function(){
-        //     var pArr = document.getElementsByTagName("p");
+        //     var pArr = document.getElementsByClassName("test2");
         //     for(var i=0; i<pArr.length; i++){
-        //         pArr[i].style.border = "5px solid #f00";
+        //         //pArr[i].style.border = "5px solid #f00";
+        //         var varP = pArr[i];
+        //         if(varP.tagName == "P"){
+        //             if(varP.parentNode.tagName == "DIV"){
+        //                 varP.style.border = "5px solid #f00";
+        //             }
+        //         }
         //     }
         // }
         // jQuery
         $(document).ready(function(){
-            $("p").css("border", "5px solid #f00")
-        })
+            $("div p.test2").css("border", "5px solid #f00")
+        });
     </script>
 </head>
 <body>
